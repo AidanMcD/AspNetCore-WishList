@@ -1,6 +1,13 @@
 ﻿namespace WishList.Data
 {
-    public class ApplicationDbContext
+    using Microsoft.EntityFrameworkCore;
+
+
+    public class ApplicationDbContext:DbContext
     {
+        public ApplicationDbContext(DbContextOptions options):base(options)
+        {
+
+        }
     }
 }
